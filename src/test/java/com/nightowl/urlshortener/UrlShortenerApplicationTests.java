@@ -25,7 +25,7 @@ class UrlShortenerApplicationTests {
 
     @Autowired
     private ObjectMapper objectMapper;
-    
+
     @Test
     void contextLoads() {
     }
