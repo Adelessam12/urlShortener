@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 public class UrlShortenerService {
 
     private final UrlMappingRepository repository;
-    private static final String CHARACTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    private static final String CHARACTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final int SHORT_CODE_LENGTH = 6;
     private final Random random = new Random();
 
