@@ -17,12 +17,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import com.jayway.jsonpath.JsonPath;
 
 @SpringBootTest
-@RequiredArgsConstructor
+@AutoConfigureMockMvc
 class UrlShortenerApplicationTests {
 
-    private final MockMvc mockMvc;
+    @Autowired
+    private MockMvc mockMvc;
 
-    private final ObjectMapper objectMapper;
+    @Autowired
+    private ObjectMapper objectMapper;
     
     @Test
     void contextLoads() {
