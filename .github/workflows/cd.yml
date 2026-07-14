@@ -6,7 +6,7 @@ on:
     types:
       - completed
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   build-and-push-docker-image:
